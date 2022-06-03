@@ -218,11 +218,11 @@ border: #000000;
   
     
 background-color: #ff00f7;
-color: #ff0000;
-border: #000000;
+color: #00ff44;
+border: #3602f4;
     }
 #menu1 ul  li:hover a{
-        background-color: #000000;
+        background-color: #fa0101;
         color: #4412e7;
         border: #1df509;
         
@@ -241,15 +241,13 @@ border: #000000;
 
 .ll{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
-
 .niz{
-    position: absolute;
-    bottom: 16px;
-display: flex;
+    
+ display: flex;
 
 }
 
@@ -257,65 +255,52 @@ display: flex;
     height: 8px;
     width: 30px;
     margin: 10px;
-    cursor:pointer;
+    cursor: pointer;
     background-color: #ffffff;
     opacity: .5;
-    border-radius:10px ;
+    border-radius: 10px;
     transition: all .4s ease;
-
-
 }
- 
+.bar :hover{
+    opacity: .8;
+    transform: scale(1.1);
+}
+
 input[name="r"]{
     position: absolute;
     visibility: hidden;
-
 }
-
-.slider{
+.slides{
     width: 400%;
     height: 100%;
     display: flex;
 
 }
-
 .slide{
     width: 25%;
-    transition: all .6s ease;
-
+    transition:all .6s ease;
 }
 
 .slide img{
     width: 100%;
     height: 100%;
-
-
-
 }
 
-#r1:checked .s1{
+#r1:checked ~ .s1{
     margin-left:0 ;
-
+}
+#r2:checked ~ .s1{
+    margin-left:-25% ;
+}
+#r3:checked ~ .s1{
+    margin-left:-50% ;
+}
+#r4:checked ~ .s1{
+    margin-left:-75% ;
 }
 
 
-#r2:checked .s1{
-    margin-left:-25 ;
 
-}
-
-
-
-#r3:checked .s1{
-    margin-left:-50 ;
-
-}
-
-
-#r4:checked .s1{
-    margin-left:0 ;
-
-}
 
 
 
