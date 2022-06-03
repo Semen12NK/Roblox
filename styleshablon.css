@@ -1,0 +1,343 @@
+body{
+    background-color: black;
+}
+
+#container{
+    border: solid 1px #ff0000;
+    color: aliceblue;
+  
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#container div{
+    border: solid 1px #59ff00;
+    margin: 3px;
+    text-align: center;
+    
+   
+}
+
+.header{
+    background-color: aliceblue;
+    color: aqua;
+    height: 150px;
+
+}
+
+.header img{
+    height: 150px;
+}
+
+.main{
+    background-color: #ff00f7;
+    display: flex;
+}
+
+.content{
+    flex: 70%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.post{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    text-align: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.post img{
+    flex: 30% ;
+    height: 90%;
+    background-color: #ffffff;
+    border: solid 1px #000000;
+    box-shadow: 10px 10px 5px 0px #000000bf;
+    border-radius: 10px;
+    margin: 10px;
+}
+.post .text{
+    background-color: rgb(255, 255, 255);
+    flex: 70% ;
+    height: 90%;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    border-radius: 10px;
+    border: solid 1px #000000;
+}
+
+.text h2{
+    color: #ff0000;
+}
+.text p{
+    color: #000000;
+    background-color: rgb(255, 255, 255);
+}
+.text a{
+    text-decoration: none;
+    background-color: #000000;
+    color: #ff0000;
+    border: solid 2px #ff0000;
+    border-radius: 5px;
+}
+
+
+
+
+
+.sidebar{
+    flex: 30%;
+}
+.footer{
+  
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background-color: #59ff00bf;
+    
+
+
+
+
+
+}
+
+
+.footer img{
+flex: 39%;
+margin: 10px;
+
+
+
+
+}
+
+
+
+.footer .text2{
+    flex:25%;
+    margin: 12px;
+
+
+
+}
+
+#menu1{
+
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    z-index: 10;
+    
+    }
+
+
+
+
+    #menu1 {
+
+        position: relative;
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+
+        }
+#menu1 ul{
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+    
+
+#menu1 >ul::after{
+display: block;
+width: 100%;
+height: 0;
+clear: both;
+content: "";
+
+}
+#menu1 ul li {
+position: relative;
+display: block;
+float: left;
+width: auto;
+height: auto;
+
+}
+#menu1 ul li a{
+    display: block;
+    text-decoration: none;
+    padding: 10px;
+    height: 38px;
+    box-sizing: border-box;
+    background-color: #640bc8;
+    color: #ffffff;
+    border: solid 1px #ff00f7;
+
+}
+#menu1 ul li ul{
+    position: absolute;
+    top: 40px;
+    left: 0;
+    display: none;
+    width: 200px;
+    background-color: aqua;
+
+}
+#menu1 ul li:hover> ul{
+    display: block;
+
+}
+#menu1 ul li ul li{
+    float: none;
+    width: 100%;
+
+}
+
+#menu1 ul li ul li a{
+background-color: #ff00f7;
+color: #ff0000;
+border: #000000;
+
+}
+
+#menu1 ul li ul li:hover a{
+  
+    
+background-color: #ff00f7;
+color: #ff0000;
+border: #000000;
+    }
+#menu1 ul  li:hover a{
+        background-color: #000000;
+        color: #4412e7;
+        border: #1df509;
+        
+        }
+
+.slider{
+    width: 1100px;
+    height:600px ;
+    overflow: hidden;
+    border:solid #59ff00;
+
+
+
+}
+
+
+.ll{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.niz{
+    position: absolute;
+    bottom: 16px;
+display: flex;
+
+}
+
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 10px;
+    cursor:pointer;
+    background-color: #ffffff;
+    opacity: .5;
+    border-radius:10px ;
+    transition: all .4s ease;
+
+
+}
+ 
+input[name="r"]{
+    position: absolute;
+    visibility: hidden;
+
+}
+
+.slider{
+    width: 400%;
+    height: 100%;
+    display: flex;
+
+}
+
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+
+
+
+}
+
+#r1:checked .s1{
+    margin-left:0 ;
+
+}
+
+
+#r2:checked .s1{
+    margin-left:-25 ;
+
+}
+
+
+
+#r3:checked .s1{
+    margin-left:-50 ;
+
+}
+
+
+#r4:checked .s1{
+    margin-left:0 ;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
